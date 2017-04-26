@@ -2,10 +2,10 @@ import * as mosca from 'mosca';
 
 let ascoltatore = {
     //using ascoltatore
-    type: 'mongo',
-    url: 'mongodb://localhost:27017/mqtt',
+    //type: 'mongo',
+    //url: 'mongodb://localhost:27017/mqtt',
     pubsubCollection: 'ascoltatori',
-    mongo: {}
+    //mongo: {}
 };
 
 let settings = {
@@ -26,7 +26,7 @@ server.on('published', function (packet, client) {
 });
 
 // fired when a client disconnects
-server.on('clientDisconnected', function (client) {
+server.on('clientDisconnected2', function (client) {
     console.log('Client Disconnected:', client.id);
 });
 
