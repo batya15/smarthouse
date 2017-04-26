@@ -1,0 +1,1 @@
+///<reference path="@mosca/mosca.d.ts"/>
