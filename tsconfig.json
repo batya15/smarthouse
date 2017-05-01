@@ -1,22 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es2015"],
+    "target": "es6",
+    "lib": ["es2015", "es2016"],
     "module": "commonjs",
-    "declaration": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "removeComments": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "inlineSources": true
-  },
-  "files": [
-      "src/typings/tsd.d.ts"
-    ]
-  "include": [
-    "src/**/*"
-  ]
+    "typeRoots" : ["node_modules/@types", "src/typings"]
+  }
 }
